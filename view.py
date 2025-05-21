@@ -18,9 +18,9 @@ class View(object):
         self._txtOutT = ft.TextField(label = "Tentativi rimanenti", disabled=True, width = 200)
 
         # Dati che l'utente da al programma
-        self._txtIn = ft.TextField(label = "Tentativo", width = 200)
+        self._txtIn = ft.TextField(label = "Tentativo", width = 200, disabled=True)
         self._btnReset = ft.ElevatedButton(text = "Nuova partita", width = 200, on_click = self._controller.reset )
-        self._btnPlay = ft.ElevatedButton(text = "Gioca", width = 200, on_click = self._controller.play)
+        self._btnPlay = ft.ElevatedButton(text = "Gioca", width = 200, on_click = self._controller.play, disabled = True)
 
         # Lista di stringhe sotto stante
         self._lv = ft.ListView(expand=True)
