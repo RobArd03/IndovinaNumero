@@ -1,4 +1,4 @@
- import flet as ft
+import flet as ft
 from controller import Controller
 from view import View
 
